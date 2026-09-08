@@ -11,3 +11,13 @@ SELECT WAREHOUSE_ID, WAREHOUSE_NAME, ADDRESS, IFNULL(FREEZER_YN, 'N') AS FREEZER
 FROM FOOD_WAREHOUSE
 WHERE ADDRESS LIKE '경기도%'
 ORDER BY WAREHOUSE_ID;
+--------------------------------------------------------------------------------------
+[LEVEL 1]
+SELECT    [컬럼명] 
+          또는 [COUNT(DISTINCT 컬럼)]
+          또는 [DATE_FORMAT(날짜, '%Y-%m-%d')]
+          또는 [IFNULL(컬럼, '대체값')] AS 별칭
+FROM      [테이블명]
+WHERE     [조건] (LIKE, IN, BETWEEN, IS NULL 등)
+ORDER BY  [정렬기준컬럼] DESC / ASC
+LIMIT     [숫자];
